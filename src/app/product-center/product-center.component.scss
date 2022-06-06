@@ -1,0 +1,52 @@
+img{
+    border-bottom: 3px solid black;
+    height: 300px;
+    width: 100%;
+    transition: 500ms;
+    
+        &:hover{
+        border-radius: 50%;
+        }
+    
+
+}
+
+.card{
+    border:3px solid white;
+    transition: 400ms;
+    &:hover{
+        transform: scale(1.05);
+       
+    }
+}
+
+.card-body{
+    color:white;
+    background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #47c02c, #3cbc2b, #7ac925);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #5c0a48, #901b6f, #23823b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.delete{
+    color:white;
+    background-color: red;
+    height: 30%;
+    width:10%;
+    margin-left: 30px;
+}
+.rating{
+    margin: 20px 0;
+    i{
+        margin: 3px;
+    }
+}
+
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fa-heart{
+    height: 50%;
+}

@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from '../product';
-import { HomeComponent } from '../home/home.component';
 import { MyserviceService } from '../myservice.service';
 import { AppComponent } from '../app.component';
 @Component({
@@ -24,14 +22,6 @@ async getproducts(){
   this.products=await this.myservice.ProductRegister()
   console.log(this.products)
 }
-
-async sendProduct(id:any){
-  console.log(id)
-  console.log('at  setproduct')
-  this.app.setdata(id)
-
-}
-
   ngOnInit(): void {
   }
  
